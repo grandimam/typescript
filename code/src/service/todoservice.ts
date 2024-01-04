@@ -2,7 +2,7 @@ import { TodoItem } from "../model/todoitem.js";
 
 export class TodoService {
     private nextId: number = 1;
-    private todoItems = new Array<TodoItem>();
+    private todoItems: TodoItem[] = [];
 
     public addNewTodo(item: TodoItem): number {
         this.nextId += 1;
